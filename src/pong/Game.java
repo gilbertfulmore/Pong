@@ -29,6 +29,7 @@ public class Game extends JPanel implements Runnable {
 	Thread 		  startGame     = new Thread  (this);
 	
 	public Game(JFrame frame) {
+                frame.setVisible(true);
 		frame.addKeyListener(listener);
 		frame.setFocusable(true);
 	}
