@@ -14,12 +14,12 @@ public class Ball {
     private int x2 = 0;         //point 2
     private int y2 = 0;
     private int ballSlope = 1;
+    private int playerScore = 0;
+    private int aiScore     = 0;
     private boolean n = true;   //north
     private boolean s = false;  //south
     private boolean e = false;  //east
     private boolean w = true;   //west
-    private int playerScore = 0;
-    private int aiScore     = 0;
     
     public Ball(Paddle playerPaddle, 
                 Paddle aiPaddle, 
