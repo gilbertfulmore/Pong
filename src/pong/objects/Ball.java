@@ -192,9 +192,9 @@ public class Ball {
     public void setX2(int x2)                   { this.x2 = x2; }
     public void setY2(int y2)                   { this.y2 = y2; }
     public void setBallSlope(int ballSlope)     { this.ballSlope = ballSlope; }
-	public void getS(boolean s) 				{ this.n = s; }
-	public void getE(boolean e) 				{ this.n = e; }
-	public void getW(boolean w) 				{ this.n = w; }
-	public void setPlayerScore(int playerScore) { this.playerScore = playerScore; }
-	public void setAiScore(int aiScore) 		{ this.aiScore = aiScore; }
+    public void getS(boolean s) 		{ this.n = s; }
+    public void getE(boolean e) 		{ this.n = e; }
+    public void getW(boolean w) 		{ this.n = w; }
+    public void setPlayerScore(int playerScore) { this.playerScore = playerScore; }
+    public void setAiScore(int aiScore) 	{ this.aiScore = aiScore; }
 }
