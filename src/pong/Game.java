@@ -2,7 +2,7 @@ package pong;
 
 import pong.objects.Ball;
 import pong.objects.Paddle;
-import pong.objects.PaddleAI;
+import pong.ai.PaddleAI;
 
 import java.awt.Color;
 import java.awt.Graphics;
