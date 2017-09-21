@@ -15,11 +15,6 @@ import javax.swing.JPanel;
  * @Version Alpha
  */
 
-/* 
- * #debug commands#
- * java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("hh:mm:ss");
- * System.out.println("[" + dateFormat.format( new java.util.Date() ) + " INFO]: " + "[Message here]");
- */
 public class Game extends JPanel implements Runnable {
 	Controller 	  listener 	= new Controller();
 	Paddle 		  playerPaddle  = new Paddle  (20, (Pong.height/2)-35, Pong.height);
