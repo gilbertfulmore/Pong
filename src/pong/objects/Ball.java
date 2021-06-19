@@ -20,6 +20,7 @@ public class Ball {
     private boolean s = false;  //south
     private boolean e = false;  //east
     private boolean w = true;   //west
+    private int ballSlopeFlash = 0;
     
     public Ball(Paddle playerPaddle, 
                 Paddle aiPaddle, 
@@ -171,6 +172,19 @@ public class Ball {
     public void paint(Graphics g) {
         x2 = x1 + 10;
         y2 = y1 + 10;
+        if (ballSlope == 1) {
+            g.setColor(Color.WHITE);
+        } else if (ballSlope == 2) {
+            g.setColor(Color.YELLOW);
+        } else if (ballSlope >= 3) {
+            if (ballSlopeFlash == 0) {
+                g.setColor(Color.YELLOW);
+                ++ballSlopeFlash;
+            } else {
+                g.setColor(Color.RED);
+                --ballSlopeFlash;
+            }
+        }
         g.drawOval(x1, y1, 10, 10);
         g.fillOval(x1, y1, 10, 10);
     }
